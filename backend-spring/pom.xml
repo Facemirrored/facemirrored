@@ -4,6 +4,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <artifactId>backend-spring</artifactId>
 
+  <properties>
+    <maven.compiler.source>22</maven.compiler.source>
+    <maven.compiler.target>22</maven.compiler.target>
+  </properties>
+
   <build>
     <plugins>
       <plugin>
@@ -18,15 +23,6 @@
           </excludes>
         </configuration>
         <groupId>org.springframework.boot</groupId>
-      </plugin>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>22</source>
-          <target>22</target>
-        </configuration>
-        <groupId>org.apache.maven.plugins</groupId>
-        <version>3.13.0</version>
       </plugin>
     </plugins>
   </build>
