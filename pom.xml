@@ -12,23 +12,8 @@
   <packaging>pom</packaging>
 
   <properties>
-    <java.version>22</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>22</source>
-          <target>22</target>
-        </configuration>
-        <groupId>org.apache.maven.plugins</groupId>
-        <version>3.13.0</version>
-      </plugin>
-    </plugins>
-  </build>
 
   <version>0.0.1-SNAPSHOT</version>
 </project>
