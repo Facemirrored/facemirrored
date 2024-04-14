@@ -71,12 +71,5 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <properties>
-    <java.version>22</java.version>
-    <maven.compiler.source>22</maven.compiler.source>
-    <maven.compiler.target>22</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
   <version>0.0.1-SNAPSHOT</version>
 </project>
