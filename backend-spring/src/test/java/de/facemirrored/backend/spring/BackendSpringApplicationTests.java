@@ -1,4 +1,4 @@
-package de.facemirrored.backendspring;
+package de.facemirrored.backend.spring;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

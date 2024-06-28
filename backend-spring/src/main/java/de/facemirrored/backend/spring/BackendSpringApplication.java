@@ -1,4 +1,4 @@
-package de.facemirrored.backendspring;
+package de.facemirrored.backend.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
