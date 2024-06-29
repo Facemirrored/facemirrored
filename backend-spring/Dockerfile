@@ -1,4 +1,4 @@
-# Use the official Maven image with Eclipse Temurin JDK 22
+# Use the official Maven image
 FROM maven:3.8.7-openjdk-18 AS build
 
 # Set the working directory inside the container
@@ -22,6 +22,7 @@ FROM amazoncorretto:17
 WORKDIR /app
 
 # Copy build jar file to app dir
+# TODO: environment variables for version and port (maybe binding to spring boot yml config possible?)
 COPY --from=build /build/target/backend-spring-0.0.1-SNAPSHOT.jar /app/
 
 EXPOSE 8088

@@ -1,0 +1,6 @@
+services:
+  # exploit web service layer, using backend-spring image and exposing spring boot port 8088 to 8080 browser port
+  web:
+    build: backend-spring
+    ports:
+      - "8080:8088"
