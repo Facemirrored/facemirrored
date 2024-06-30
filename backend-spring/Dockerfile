@@ -25,6 +25,11 @@ WORKDIR /app
 # TODO: environment variables for version and port (maybe binding to spring boot yml config possible?)
 COPY --from=build /build/target/backend-spring-0.0.1-SNAPSHOT.jar /app/
 
+# Copy the keystore file fore ssl cert
+# TODO: vault (?) for cert password in application.yaml
+# TODO: automate cert generation from certbot (cert expires 2024-09-28)
+COPY /etc/letsencrypt/live/facemirrored.de/keystore.p12 /app/keystore.p12
+
 EXPOSE 8088
 
 CMD java -jar backend-spring-0.0.1-SNAPSHOT.jar
